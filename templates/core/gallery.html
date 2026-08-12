@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Gallery | Ember & Spice{% endblock %}
+
+{% block content %}
+
+<section class="gallery-banner">
+    <h1>Our Gallery</h1>
+    <p>A glimpse into the Ember & Spice experience.</p>
+</section>
+
+<section class="gallery-section">
+
+    <div class="section-title">
+        <span>Inside Ember & Spice</span>
+        <h2>Moments Worth Savoring</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+        {% for image in "123456789" %}
+        <div class="gallery-item">
+            <img src="{% static 'images/gallery/gallery'|add:image|add:'.jfif' %}"
+                 alt="Ember & Spice gallery image">
+            <div class="gallery-overlay">
+                <i class="fa-solid fa-expand"></i>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="gallery-text">
+        <h2>Every Plate Tells A Story</h2>
+        <p>
+            From our carefully prepared dishes to our warm dining atmosphere,
+            every detail at Ember & Spice is created to make your experience
+            memorable.
+        </p>
+    </div>
+
+</section>
+
+{% endblock %}

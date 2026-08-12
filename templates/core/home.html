@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Ember & Spice{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="tag">Fine Dining Experience</span>
+
+        <h1>
+            Where Every Meal<br>
+            Tells A Story
+        </h1>
+
+        <p>
+            Experience handcrafted dishes prepared with fresh ingredients,
+            exceptional flavors, and unforgettable hospitality.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="{% url 'menu' %}" class="btn-primary">
+                Explore Menu
+            </a>
+
+            <a href="{% url 'reservation' %}" class="btn-secondary">
+                Book A Table
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="{% static 'images/hero/hero.png' %}" alt="">
+    </div>
+
+</section>
+
+
+<section class="featured">
+
+    <div class="section-title">
+
+        <span>Chef's Picks</span>
+
+        <h2>Featured Dishes</h2>
+
+    </div>
+
+    <div class="featured-dishes-grid">
+
+        <div class="featured-card">
+
+            <img src="{% static 'images/dishes/dish1.jpg' %}" alt="">
+
+            <div class="featured-info">
+
+                <h3>Grilled Steak</h3>
+
+                <p>Perfectly grilled premium beef served with roasted vegetables.</p>
+
+                <h4>$28</h4>
+
+            </div>
+
+        </div>
+
+        <div class="featured-card">
+
+            <img src="{% static 'images/dishes/dish2.jpg' %}" alt="">
+
+            <div class="featured-info">
+
+                <h3>Creamy Pasta</h3>
+
+                <p>Fresh pasta tossed in our signature creamy parmesan sauce.</p>
+
+                <h4>$22</h4>
+
+            </div>
+
+        </div>
+
+        <div class="featured-card">
+
+            <img src="{% static 'images/dishes/dish3.jpg' %}" alt="">
+
+            <div class="featured-info">
+
+                <h3>Seafood Delight</h3>
+
+                <p>Fresh shrimp and salmon paired with aromatic herbs.</p>
+
+                <h4>$35</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about-home">
+
+    <div class="about-image">
+        <img src="{% static 'images/about/about.avif' %}" alt="">
+    </div>
+
+    <div class="about-content">
+
+        <span>About Us</span>
+
+        <h2>
+            A Passion For Exceptional Food & Hospitality
+        </h2>
+
+        <p>
+            At Ember & Spice, we combine fresh ingredients, talented chefs, and a warm atmosphere to create memorable dining experiences. Every dish is crafted with care and served with excellence.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3>15+</h3>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>50+</h3>
+                <p>Signature Dishes</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>10k+</h3>
+                <p>Happy Customers</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="why-us">
+
+    <div class="section-title">
+        <span>Why Choose Us</span>
+        <h2>An Experience Worth Savoring</h2>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Fresh Ingredients</h3>
+            <p>We source premium ingredients daily to ensure every meal is fresh and flavorful.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa-solid fa-user-chef"></i>
+            <h3>Expert Chefs</h3>
+            <p>Our chefs combine creativity and experience to craft unforgettable dishes.</p>
+        </div>
+
+        <div class="why-card">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h3>Elegant Atmosphere</h3>
+            <p>Enjoy fine dining in a relaxing and beautifully designed environment.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="testimonials">
+
+    <div class="section-title">
+        <span>Testimonials</span>
+        <h2>What Our Guests Say</h2>
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+            <p>
+                "The best dining experience I've had in years. Amazing food and outstanding service."
+            </p>
+
+            <h4>— Sarah Johnson</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Everything from the ambiance to the desserts exceeded my expectations."
+            </p>
+
+            <h4>— Michael Brown</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "I'll definitely be coming back. Ember & Spice has become my favorite restaurant."
+            </p>
+
+            <h4>— Emily Davis</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <h2>Ready To Experience Ember & Spice?</h2>
+
+    <p>
+        Reserve your table today and enjoy a memorable dining experience.
+    </p>
+
+    <a href="{% url 'reservation' %}" class="btn-primary">
+        Book Your Table
+    </a>
+
+</section>
+
+{% endblock %}

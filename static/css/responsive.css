@@ -1,0 +1,514 @@
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-toggle{
+    display:none;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px){
+
+    .navbar{
+        padding:0 4%;
+    }
+
+    .hero{
+        gap:40px;
+    }
+
+    .hero h1{
+        font-size:3.2rem;
+    }
+
+    .featured-dishes-grid,
+    .why-grid,
+    .testimonial-grid,
+    .chef-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .about-section{
+        grid-template-columns:1fr;
+        gap:50px;
+        padding:80px 6%;
+    }
+
+    .about-home{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .about-left img,
+    .about-image img{
+        height:450px;
+    }
+
+    .mission{
+        grid-template-columns:1fr 1fr;
+        padding:0 6% 80px;
+    }
+
+    .reservation-section,
+    .contact-section{
+        grid-template-columns:1fr;
+        gap:50px;
+        padding:80px 6%;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .menu-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .cta{
+        margin-left:6%;
+        margin-right:6%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+
+    .navbar{
+        height:75px;
+        padding:0 5%;
+    }
+
+    .logo a{
+        font-size:1.6rem;
+    }
+
+    .menu-toggle{
+        display:block;
+        border:none;
+        background:transparent;
+        font-size:1.5rem;
+        color:var(--dark);
+        cursor:pointer;
+        z-index:1002;
+    }
+
+    .nav-links{
+        position:absolute !important;
+        top:75px;
+        left:0;
+        width:100%;
+
+        display:flex !important;
+        flex-direction:column;
+        align-items:center;
+
+        margin:0;
+        padding:0;
+
+        background:var(--light);
+        box-shadow:var(--shadow);
+
+        max-height:0;
+        overflow:hidden;
+
+        opacity:0;
+        visibility:hidden;
+
+        transition:
+            max-height .35s ease,
+            opacity .25s ease,
+            visibility .25s ease;
+
+        z-index:1000;
+    }
+
+    .nav-links.active{
+        max-height:500px;
+        padding:15px 0;
+        opacity:1;
+        visibility:visible;
+    }
+
+    .nav-links li{
+        width:100%;
+        text-align:center;
+        margin:0;
+    }
+
+    .nav-links li a{
+        display:block;
+        width:100%;
+        padding:15px 20px;
+    }
+
+    .book-btn{
+        display:none !important;
+    }
+
+
+    /* GENERAL SECTIONS */
+
+    section{
+        padding:70px 5%;
+    }
+
+
+    /* HOME HERO */
+
+    .hero{
+        min-height:auto;
+        flex-direction:column;
+        text-align:center;
+        padding:120px 5% 70px;
+        gap:40px;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:2.6rem;
+    }
+
+    .hero p{
+        max-width:100%;
+        font-size:1rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image img{
+        max-width:450px;
+        width:100%;
+    }
+
+
+    /* SECTION TITLES */
+
+    .section-title{
+        margin-bottom:40px;
+    }
+
+    .section-title h2{
+        font-size:2.3rem;
+    }
+
+
+    /* FEATURED */
+
+    .featured{
+        padding:70px 5%;
+    }
+
+    .featured-dishes-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+        margin-top:40px;
+    }
+
+    .featured-card img{
+        height:240px;
+    }
+
+
+    /* HOME ABOUT */
+
+    .about-home{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about-image img{
+        height:350px;
+    }
+
+    .about-content h2{
+        font-size:2.4rem;
+    }
+
+    .stats{
+        flex-direction:column;
+    }
+
+
+    /* WHY US */
+
+    .why-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+        margin-top:40px;
+    }
+
+
+    /* TESTIMONIALS */
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+        margin-top:40px;
+    }
+
+    .testimonial-card{
+        padding:30px 25px;
+    }
+
+
+    /* CTA */
+
+    .cta{
+        margin:50px 5%;
+        padding:60px 25px;
+    }
+
+    .cta h2{
+        font-size:2.3rem;
+    }
+
+
+    /* ABOUT PAGE */
+
+    .page-banner{
+        padding:140px 5% 70px;
+    }
+
+    .page-banner h1{
+        font-size:2.8rem;
+    }
+
+    .about-section{
+        grid-template-columns:1fr;
+        gap:45px;
+        padding:70px 5%;
+    }
+
+    .about-left img{
+        height:350px;
+    }
+
+    .about-right h2{
+        font-size:2.4rem;
+    }
+
+    .mission{
+        grid-template-columns:1fr;
+        gap:25px;
+        padding:0 5% 70px;
+    }
+
+    .mission-card{
+        padding:35px 25px;
+    }
+
+    .chef-section{
+        padding:70px 5%;
+    }
+
+    .chef-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .chef-card img{
+        height:330px;
+    }
+
+
+    /* MENU */
+
+    .menu-hero{
+        padding:140px 5% 70px;
+    }
+
+    .menu-hero h1{
+        font-size:2.8rem;
+    }
+
+    .menu-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .menu-card img{
+        height:240px;
+    }
+
+    .filter-buttons{
+        gap:10px;
+        margin-bottom:40px;
+    }
+
+    .filter-buttons button{
+        padding:10px 20px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-banner{
+        padding:140px 5% 70px;
+    }
+
+    .gallery-banner h1{
+        font-size:2.8rem;
+    }
+
+    .gallery-section{
+        padding:70px 5%;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+        margin-top:40px;
+    }
+
+    .gallery-item{
+        height:280px;
+    }
+
+
+    /* RESERVATIONS */
+
+    .reservation-banner{
+        padding:140px 5% 70px;
+    }
+
+    .reservation-banner h1{
+        font-size:2.8rem;
+    }
+
+    .reservation-section{
+        grid-template-columns:1fr;
+        gap:45px;
+        padding:70px 5%;
+    }
+
+    .reservation-intro h2{
+        font-size:2.4rem;
+    }
+
+    .reservation-form-container{
+        padding:30px 20px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+
+    /* CONTACT */
+
+    .contact-banner{
+        padding:140px 5% 70px;
+    }
+
+    .contact-banner h1{
+        font-size:2.8rem;
+    }
+
+    .contact-section{
+        grid-template-columns:1fr;
+        gap:45px;
+        padding:70px 5%;
+    }
+
+    .contact-info h2{
+        font-size:2.4rem;
+    }
+
+    .contact-form-container{
+        padding:30px 20px;
+    }
+
+    .map-section{
+        padding:0 5% 70px;
+    }
+
+    .map-container{
+        height:350px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px){
+
+    .logo a{
+        font-size:1.4rem;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        text-align:center;
+    }
+
+    .section-title h2{
+        font-size:2rem;
+    }
+
+    .page-banner h1,
+    .menu-hero h1,
+    .gallery-banner h1,
+    .reservation-banner h1,
+    .contact-banner h1{
+        font-size:2.3rem;
+    }
+
+    .featured-card img,
+    .menu-card img{
+        height:220px;
+    }
+
+    .chef-card img{
+        height:280px;
+    }
+
+    .why-card,
+    .testimonial-card,
+    .mission-card{
+        padding:30px 20px;
+    }
+
+    .cta h2{
+        font-size:2rem;
+    }
+
+    .reservation-info > div,
+    .contact-detail{
+        align-items:flex-start;
+    }
+}

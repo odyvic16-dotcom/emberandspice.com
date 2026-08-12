@@ -1,0 +1,61 @@
+<nav class="navbar">
+
+    <div class="logo">
+        <a href="{% url 'home' %}">
+            Ember<span>&</span>Spice
+        </a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li>
+    <a href="{% url 'home' %}"
+       class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+        Home
+    </a>
+</li>
+
+<li>
+    <a href="{% url 'menu' %}"
+       class="{% if request.resolver_match.url_name == 'menu' %}active{% endif %}">
+        Menu
+    </a>
+</li>
+
+<li>
+    <a href="{% url 'about' %}"
+       class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">
+        About
+    </a>
+</li>
+
+<li>
+    <a href="{% url 'gallery' %}"
+       class="{% if request.resolver_match.url_name == 'gallery' %}active{% endif %}">
+        Gallery
+    </a>
+</li>
+
+<li>
+    <a href="{% url 'reservation' %}"
+       class="{% if request.resolver_match.url_name == 'reservation' %}active{% endif %}">
+        Reservations
+    </a>
+</li>
+
+<li>
+    <a href="{% url 'contact' %}"
+       class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">
+        Contact
+    </a>
+</li>
+    </ul>
+
+    <a href="{% url 'reservation' %}" class="book-btn">
+        Book a Table
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</nav>

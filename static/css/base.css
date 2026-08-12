@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.container{
+    width:100%;
+    max-width:var(--max-width);
+    margin:auto;
+}

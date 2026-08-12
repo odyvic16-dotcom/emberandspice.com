@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu | Ember & Spice{% endblock %}
+
+{% block content %}
+
+<section class="menu-hero">
+
+    <h1>Our Menu</h1>
+
+    <p>
+        Discover handcrafted dishes prepared with passion.
+    </p>
+
+</section>
+
+<section class="menu-section">
+
+    <div class="filter-buttons">
+
+        <button class="active" data-filter="all">All</button>
+
+        {% for category in categories %}
+            <button data-filter="{{ category }}">
+                {{ category }}
+            </button>
+        {% endfor %}
+
+    </div>
+
+    <div class="menu-grid">
+
+        {% for item in items %}
+
+        <div class="menu-card" data-category="{{ item.category }}">
+
+            <img src="{{ item.image.url }}" alt="">
+
+            <div class="menu-content">
+
+                <span>{{ item.category }}</span>
+
+                <h3>{{ item.name }}</h3>
+
+                <p>{{ item.description }}</p>
+
+                <h4>${{ item.price }}</h4>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}
