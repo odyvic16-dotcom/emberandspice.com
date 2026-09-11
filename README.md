@@ -1,39 +1,41 @@
-# 🍽️ Ember & Spice
+# Ember & Spice 🍽️
 
-A modern and responsive restaurant website built with Django, HTML, CSS, and JavaScript.
+A modern, responsive restaurant website built with Django, HTML, CSS, and JavaScript.
 
-Ember & Spice was created as a real-world web development project to demonstrate responsive design, interactive UI components, and Django integration.
+Ember & Spice is designed to provide a clean and engaging online experience for a restaurant, allowing visitors to explore the menu, learn about the restaurant, view the gallery, and make reservations.
 
 ## ✨ Features
 
 - Responsive design for desktop, tablet, and mobile
-- Modern restaurant-focused UI
-- Interactive menu filtering
-- Mobile navigation menu
-- Active navigation states
-- Chef's Picks section
-- Restaurant information pages
-- Contact section
+- Restaurant homepage with featured dishes
+- Menu browsing and category filtering
+- About Us and chef section
+- Image gallery
+- Contact page
+- Online reservation form
+- Mobile-friendly navigation
 - Django-powered backend
-- SQLite database
+- Django admin dashboard for managing content
 
-## 🛠️ Technologies
+## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
-- Python
-- Django
-- SQLite
-- Git & GitHub
+- **Backend:** Python, Django
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Database:** SQLite
+- **Tools:** Git, GitHub, VS Code
 
 ## 📂 Project Structure
+
+The project is organized into Django applications, templates, static files, media files, and project configuration.
+
 ```
-emberandspice/
-├── manage.py
-├── requirements.txt
-├── project/
-├── app/
+ember_spice/
+├── config/
+├── core/
+├── menu/
+├── reservations/
 ├── static/
 ├── templates/
-└── README.md
+├── media/
+├── manage.py
+└── .gitignore
